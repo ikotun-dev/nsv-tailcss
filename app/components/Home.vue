@@ -1,6 +1,6 @@
 <template>
     <Page>
-        <ActionBar>
+        <ActionBar class="bg-blue-900">
             <Label text="Home"/>
         </ActionBar>
 
