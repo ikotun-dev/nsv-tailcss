@@ -9,6 +9,9 @@
     </GridLayout>
 
           <StackLayout class="p-10 bg-gray-300">
+          <StackLayout class="bg-blue-300 border-2 rounded-lg h-36">
+          <Label text="changes"/>
+          </StackLayout>
       <Label text="First Name" class="text-sm font-mono" />
       <TextField v-model="firstName" class="input-field" />
 
