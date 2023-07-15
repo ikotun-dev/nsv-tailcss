@@ -14,7 +14,7 @@
 export default {
   mounted() {
     setTimeout(() => {
-      this.$router.push('/signup-login');
+      this.$navigator.navigate('/signup-login');
     }, 3000); // Switch to signup-login route after 3 seconds (adjust the time as needed)
   }
 };

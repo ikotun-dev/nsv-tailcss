@@ -1,9 +1,9 @@
 import Vue from 'nativescript-vue'
 import router from './router';
 
-Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer)
+//Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer)
 
-import Home from './components/Home'
+//import Home from './components/Home'
 
 // new Vue({
 //   render: (h) => h('frame', [h(Home)]),

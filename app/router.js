@@ -1,19 +1,14 @@
 import Vue from 'nativescript-vue';
-import VueRouter from 'vue-router';
+import Navigator from 'nativescript-vue-navigator';
 
-Vue.use(VueRouter);
-
-const router = new VueRouter({
+Vue.use(Navigator, {
   routes: [
-    {
-      path: '/',
-      component: () => import('./components/Home.vue') // Modify with your Home component path
-    },
-    {
-      path: '/signup-login',
-      component: () => import('./components/SignupLogin.vue') // Modify with your SignupLogin component path
-    }
-  ]
+    { path: '/', component: Home },
+    { path: '/signup-login', component: SignupLogin },
+    // Add more routes as needed
+  ],
 });
 
-export default router;
+new Vue({
+  render: (h) => h('Navigator'),
+}).$start();
