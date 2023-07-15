@@ -1,19 +1,11 @@
 import Vue from 'nativescript-vue'
-import router from './router';
 
-//Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer)
+import Navigator from 'nativescript-vue-navigator'
+import {routes} from './routes'
 
-//import Home from './components/Home'
-
-// new Vue({
-//   render: (h) => h('frame', [h(Home)]),
-// }).$start()
+Vue.use(Navigator,  {routes})
 
 new Vue({
-  router,
-  template: `
-    <Frame>
-      <router-view></router-view>
-    </Frame>
-  `
-}).$start();
+  render: (h) => h('Navigator', { attrs : {defaultRoute : '/home', } }),
+
+}).$start()
