@@ -10,8 +10,8 @@
  
         <GridLayout rows="auto, auto" columns="*, *" class="mt-6 ml-3">
    
-          <Label row="0" col="0" text="Don't have an account? "  class="text-blue-500 ml-6"></Label>
-          <Label row="0" col="1" text="SignUp" @tap="goSignup" class="text-blue-900 ml-4 font-bold"></Label>
+          <Label row="0" col="0" text="Don't have an account? "  class="text-blue-700 ml-6"></Label>
+          <Label row="0" col="1" text="SignUp" @tap="goSignup" class="text-blue-900 ml-2 font-bold"></Label>
         </GridLayout>
       </StackLayout>
     </Page>
@@ -20,7 +20,7 @@
 export default{
   methods: {
     goSignup() {
-      this.$navigator.navigate('/signup')
+      this.$navigator.navigate('/signup', {clearHistory: true})
     }
   }
 }
