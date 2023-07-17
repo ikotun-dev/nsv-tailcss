@@ -1,10 +1,10 @@
 <template>
-    <Page class="bg-blue-500">
-        <ActionBar class="bg-blue-500">
+    <Page class="bg-gray-500">
+        <ActionBar class="bg-gray-500">
             <Label  class="text-white text-bold"/>
         </ActionBar>
 
-        <StackLayout class="bg-blue-500 flex items-center justify-center" verticalAlignment="center" horizontalAlignment="center">
+        <StackLayout class="bg-gray-500 flex items-center justify-center" verticalAlignment="center" horizontalAlignment="center">
             <Label text="Cohabitat" class="text-3xl  text-white font-bold" />
             <!-- <Button text="login" class="bg-black" @tap="$navigator.navigate('/login', {clearHistory : True})" /> -->
         </StackLayout>

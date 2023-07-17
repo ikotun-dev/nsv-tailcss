@@ -17,7 +17,7 @@ module.exports = {
      * 
      * Example usage: 
      *
-     *   <Label class="android:text-red-500 ios:text-blue-500" />
+     *   <Label class="android:text-red-500 ios:text-gray-500" />
      *
      */
     plugin(function ({ addVariant }) {
